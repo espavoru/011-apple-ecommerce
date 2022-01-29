@@ -6,10 +6,12 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  position: relative;
+  top: -2rem;
   width: 30rem;
   height: 55rem;
 
-  transform: rotateY(91deg);
+  transform: rotateY(31deg);
   transform-style: preserve-3d;
 
   &__wrapper {
@@ -109,6 +111,71 @@
       right: 0;
       transform-origin: right;
       transform: rotateY(90deg);
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: -15rem;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 1rem solid rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+
+    i {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+
+      transition: opacity 0.5s;
+      opacity: 0.5;
+    }
+
+    a {
+      position: absolute;
+
+      &:hover i {
+        opacity: 1;
+      }
+    }
+
+    a:nth-child(1) { // stylelint-disable-line
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    a:nth-child(2) { // stylelint-disable-line
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    a:nth-child(3) { // stylelint-disable-line
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    a:nth-child(4) { // stylelint-disable-line
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    a:nth-child(5) { // stylelint-disable-line
+      top: 9%;
+      right: 13%;
+      transform: rotate(45deg);
+    }
+
+    a:nth-child(6) { // stylelint-disable-line
+      bottom: 7%;
+      left: 14%;
+      transform: rotate(45deg);
     }
   }
 }

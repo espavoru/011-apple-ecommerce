@@ -539,10 +539,10 @@
     # "selector-nested-pattern": ["^(&|\\.\\w+\\s+&)(__\\w|--\\w)?", {
     #   "message": "Вкладывать такой селектор нельзя"
     # }],
-    "selector-pseudo-class-disallowed-list": [["/^nth-/", ], {
-      # "severity": "warning",
-      "message": "Псевдокласс такой использовать не стоит"
-    }],
+    # "selector-pseudo-class-disallowed-list": [["/^nth-/", ], {
+    #   # "severity": "warning",
+    #   "message": "Псевдокласс такой использовать не стоит"
+    # }],
     "value-list-max-empty-lines": [0, {
       "message": "Пустые строки в значениях свойств недопустимы"
     }],
