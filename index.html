@@ -9,15 +9,6 @@
   <meta name="format-detection" content="address=no">
   <meta name="format-detection" content="email=no">
   <meta content="notranslate" name="google">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#5bbad5">
-  <meta name="theme-color" content="#000">
-  <meta name="msapplication-navbutton-color" content="#000">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
   <title>Apple eCommerce | Sitename</title>
   <meta name="description" content="Website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,11 +60,21 @@ document.addEventListener("DOMContentLoaded", () => {
       <section class="iphone-12" id="iphone-12"><a class="logo" href="#"><i class="fab fa-apple"></i></a>
         <nav class="navbar"><a class="navbar__link" href="#iphone-12">iPhone12</a><a class="navbar__link" href="#mac-book">MacBook Air</a><a class="navbar__link" href="#watch">Watch</a><a class="navbar__link" href="#airpods">AirPods</a></nav>
         <!--/.navbar-->
+        <div class="cube__wrapper">
+          <div class="cube">
+            <div class="cube__front-side"><img src="img/iphone.png" alt="iPhone 12"></div>
+            <div class="cube__back-side"><i class="fab fa-apple"></i></div>
+          </div>
+          <div class="cube__controls"><a href="#"><i class="fas fa-arrow-up top-x-control"></i></a><a href="#"><i class="fas fa-arrow-down bottom-x-control"></i></a><a href="#"><i class="fas fa-arrow-left left-y-control"></i></a><a href="#"><i class="fas fa-arrow-right right-y-control"></i></a><a href="#"><i class="fas fa-arrow-down top-z-control"></i></a><a href="#"><i class="fas fa-arrow-up bottom-z-control"></i></a></div>
+          <!--/.cube__controls-->
+        </div>
+        <!--/.cube-->
         <div class="banner">
           <h1>Apple eCommerce</h1>
           <h2>&#8592; Best Gift</h2>
           <p>"Creativity is just connecting things."</p><span>- Steve Jobs</span><button class="btn">Buy Now</button>
         </div>
+        <div class="iphone-12__slideshow"></div>
       </section>
       <!--/.iphone-12-->
       <footer class="page-footer" role="contentinfo">

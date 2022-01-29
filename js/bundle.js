@@ -97,6 +97,28 @@ eval("var ready = __webpack_require__(/*! ../../js/utils/documentReady.js */ \".
 
 /***/ }),
 
+/***/ "./src/blocks/cube/cube.js":
+/*!*********************************!*\
+  !*** ./src/blocks/cube/cube.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/blocks/cube/cube.js?");
+
+/***/ }),
+
+/***/ "./src/blocks/iphone-12/iphone-12.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/iphone-12/iphone-12.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var slideshowDivs = function slideshowDivs() {\n  for (var i = 1; i <= 5; i++) {\n    var div = document.createElement('div');\n    div.style.backgroundImage = \"url(img/iphone-12-bg-\".concat(i, \".jpg)\");\n    if (i === 1) div.classList.add('change');\n    document.querySelector('.iphone-12__slideshow').appendChild(div);\n  }\n};\n\nslideshowDivs();\nvar divs = document.querySelectorAll('.iphone-12__slideshow div');\nvar counter = 0;\n\nvar slideshow = function slideshow() {\n  setInterval(function () {\n    counter++;\n    var div = document.querySelector('.iphone-12__slideshow .change');\n    div.classList.remove('change');\n\n    if (counter < divs.length) {\n      div.nextElementSibling.classList.add('change');\n    } else {\n      divs[0].classList.add('change');\n      counter = 1;\n    }\n  }, 10000);\n};\n\nslideshow();\n\n//# sourceURL=webpack:///./src/blocks/iphone-12/iphone-12.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/main-nav/main-nav.js":
 /*!*****************************************!*\
   !*** ./src/blocks/main-nav/main-nav.js ***!
@@ -126,7 +148,7 @@ eval("function _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol ===
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/cube/cube.js */ \"./src/blocks/cube/cube.js\");\n\n__webpack_require__(/*! ../blocks/iphone-12/iphone-12.js */ \"./src/blocks/iphone-12/iphone-12.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 
