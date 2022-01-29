@@ -1,0 +1,114 @@
+// В этом файле должны быть стили для БЭМ-блока cube, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.cube {
+
+  $block-name:                &; // #{$block-name}__element
+
+  width: 30rem;
+  height: 55rem;
+
+  transform: rotateY(91deg);
+  transform-style: preserve-3d;
+
+  &__wrapper {
+    perspective: 100rem;
+  }
+
+  &__front-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+
+    transform-style: preserve-3d;
+    transform: translateZ(5rem);
+    box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+    background-color: #fee;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10rem;
+
+      box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+      background-color: #fee;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      transform-origin: top;
+      transform: rotateX(-90deg);
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      transform-origin: bottom;
+      transform: rotateX(90deg);
+    }
+  }
+
+  &__back-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+    transform: translateZ(-5rem);
+    box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+    background-color: #fee;
+
+    i {
+      font-size: 12rem;
+      text-shadow: 0.1rem 0.1rem 0.2rem #aaa, -0.1rem -0.1rem 0.2rem #aaa;
+      color: var(--primary-color);
+      transform: rotateY(180deg);
+    }
+
+    &::after,
+    &::before {
+      content: 'iPhone';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 10rem;
+      height: 100%;
+
+      font-size: 2rem;
+      font-weight: 300;
+      color: #ec1919;
+
+      box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+      background-color: #fee;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      transform-origin: left;
+      transform: rotateY(-90deg);
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      transform-origin: right;
+      transform: rotateY(90deg);
+    }
+  }
+}
