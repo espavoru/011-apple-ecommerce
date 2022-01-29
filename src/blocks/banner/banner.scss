@@ -1,0 +1,63 @@
+// В этом файле должны быть стили для БЭМ-блока banner, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.banner {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    height: 0;
+    margin: 0;
+    visibility: hidden;
+  }
+
+  h2 {
+    font-size: 13rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+
+  p {
+    margin-top: 6rem;
+    margin-right: 0;
+    margin-bottom: 4rem;
+    margin-left: 0;
+
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+
+  span {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+  }
+
+  .btn {
+    margin: 0;
+    border: none;
+    padding: 2rem 4rem;
+    border-radius: 0.5rem;
+
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: var(--primary-color);
+
+    transition: clip-path 0.5s;
+    clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%);
+    background-color: var(--black-color);
+    cursor: pointer;
+
+    &:hover {
+      clip-path: polygon(40% 15%, 77% 15%, 100% 10%, 100% 90%, 75% 85%, 40% 85%, 30% 100%, 0 50%, 0 50%, 30% 0);
+    }
+  }
+}

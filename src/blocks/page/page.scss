@@ -13,7 +13,6 @@
   }
 }
 
-
 /* stylelint-disable */
 // @font-face {
 //   font-family: 'FONTNAME';
@@ -32,6 +31,7 @@
   -webkit-text-size-adjust: 100%; // stylelint-disable-line
   min-width: 320px;
   min-height: 100%;
+  font-size: 62.5%;
 
   &__inner {
     display: flex;
