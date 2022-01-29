@@ -2,17 +2,28 @@ extends ../pug/layout.pug
 
 append config
   -
-    currentTitle = 'Главная'
-    currentDescription = 'Pink app'
+    currentTitle = 'Apple eCommerce'
+    currentDescription = 'Website'
     currentUrl = 'index.html'
 
-block content
-  h1 Top news
+block header
 
-  ol
-    li Man Found Having Tea Party With Donkey Again
-    li Woman With Epic Tattoo Arrested for 37th Time
-    li Viral Photo of Donkey Had Been Photoshopped
-    li Man Buys Hats For Low Income Local Family
-    li Man Jailed For Threatening Wife With Crumpled Hawk
-    li Small Tornado Forcast in Northern Regions
+block content
+  section.iphone-12#iphone-12
+    +logo('#')
+      i.fab.fa-apple
+
+    nav.navbar
+      a(class='navbar__link', href='#iphone-12') iPhone12
+      a(class='navbar__link', href='#mac-book') MacBook Air
+      a(class='navbar__link', href='#watch') Watch
+      a(class='navbar__link', href='#airpods') AirPods
+    ///.navbar
+
+    .banner
+      h1 Apple eCommerce
+      h2 &#8592; Best Gift
+      p "Creativity is just connecting things."
+      span - Steve Jobs
+      +btn('Buy Now')
+  ///.iphone-12
