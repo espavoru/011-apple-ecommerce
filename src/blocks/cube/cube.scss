@@ -11,8 +11,9 @@
   width: 30rem;
   height: 55rem;
 
-  transform: rotateY(31deg);
+  transform: rotateX(0) rotateY(20deg) rotateZ(0);
   transform-style: preserve-3d;
+  transition: transform 0.5s;
 
   &__wrapper {
     perspective: 100rem;
