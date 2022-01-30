@@ -15,7 +15,7 @@ block content
 
     nav.navbar
       a(class='navbar__link', href='#iphone-12') iPhone12
-      a(class='navbar__link', href='#mac-book') MacBook Air
+      a(class='navbar__link', href='#macbook') MacBook Air
       a(class='navbar__link', href='#watch') Watch
       a(class='navbar__link', href='#airpods') AirPods
     ///.navbar
@@ -90,3 +90,37 @@ block content
       a.iphones__btn(href='#')
         span Shop
   ///.iphones
+
+  section.macbook#macbook
+    h2.macbook__heading MacBook Air
+
+    .macbook__content
+      +picture({
+        'img': 'macbook-01',
+        'alt': 'MacBook Air screen',
+        'lg': false,
+        'md': false,
+        'ext': 'png'
+      }).macbook__img-1
+
+      +picture({
+        'img': 'macbook-02',
+        'alt': 'MacBook Air keyboard',
+        'lg': false,
+        'md': false,
+        'ext': 'png'
+      }).macbook__img-2
+
+      .macbook__loading-wrapper
+        .macbook__loading
+          i.fab.fa-apple
+          .macbook__progress-bar
+
+      .macbook__info
+        h3.macbook__info-heading Light. Speed.
+        p.macbook__price Starting at $999
+        +btn('Buy Now').macbook__btn
+
+    ///.macbook__content
+
+  ///.macbook

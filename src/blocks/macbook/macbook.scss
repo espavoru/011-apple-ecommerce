@@ -1,0 +1,91 @@
+// В этом файле должны быть стили для БЭМ-блока macbook, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.macbook {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 15rem 0;
+
+  background-color: var(--black-color);
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 15rem;
+
+    font-size: 10rem;
+    font-weight: 200;
+    color: var(--primary-color);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    perspective: 1000rem;
+
+    img {
+      width: inherit;
+    }
+  }
+
+  &__loading-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 6%;
+    width: 57%;
+    max-width: 840px;
+    height: 80%;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/macbook-desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-xs) {
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/macbook-desktop@2x.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .no-webp & {
+          background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/macbook-desktop@2x.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .no-webp & {
+        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/macbook-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__loading {
+    display: none;
+  }
+
+  &__info {
+    position: absolute;
+    width: 70rem;
+    text-align: center;
+  }
+
+  &__info-heading {
+    font-size: 6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+  }
+}
