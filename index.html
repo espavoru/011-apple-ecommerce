@@ -62,7 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
         <!--/.navbar-->
         <div class="cube__wrapper">
           <div class="cube">
-            <div class="cube__front-side"><img src="img/iphone.png" alt="iPhone 12"></div>
+            <div class="cube__front-side">
+              <picture class="picture">
+                <source media="(min-width: 660px)" type="image/webp" srcset="img/iphone-md.webp, img/iphone-md@2x.webp 2x" />
+                <source media="(min-width: 660px)" type="image/png" srcset="img/iphone-md.png, img/iphone-md@2x.png 2x" />
+                <source media="(min-width: 0)" type="image/webp" srcset="img/iphone-sm.webp, img/iphone-sm@2x.webp 2x" /><img class="picture__img" alt="iPhone 12" width="320" src="img/iphone-sm.png" srcset="img/iphone-sm@2x.png 2x" />
+              </picture>
+            </div>
             <div class="cube__back-side"><i class="fab fa-apple"></i></div>
           </div>
           <div class="cube__controls"><a href="#"><i class="fas fa-arrow-up top-x-control"></i></a><a href="#"><i class="fas fa-arrow-down bottom-x-control"></i></a><a href="#"><i class="fas fa-arrow-left left-y-control"></i></a><a href="#"><i class="fas fa-arrow-right right-y-control"></i></a><a href="#"><i class="fas fa-arrow-down top-z-control"></i></a><a href="#"><i class="fas fa-arrow-up bottom-z-control"></i></a></div>
