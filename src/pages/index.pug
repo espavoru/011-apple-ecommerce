@@ -23,7 +23,13 @@ block content
     .cube__wrapper
       .cube
         .cube__front-side
-          img(src='img/iphone.png', alt='iPhone 12')
+          +picture({
+            'img': 'iphone',
+            'alt': 'iPhone 12',
+            'lg': false,
+            'md': true,
+            'ext': 'png'
+          })
         .cube__back-side
           i.fab.fa-apple
 
