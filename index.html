@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="cube__back-side"><i class="fab fa-apple"></i></div>
           </div>
-          <div class="cube__controls"><a href="#"><i class="fas fa-arrow-up top-x-control"></i></a><a href="#"><i class="fas fa-arrow-down bottom-x-control"></i></a><a href="#"><i class="fas fa-arrow-left left-y-control"></i></a><a href="#"><i class="fas fa-arrow-right right-y-control"></i></a><a href="#"><i class="fas fa-arrow-down top-z-control"></i></a><a href="#"><i class="fas fa-arrow-up bottom-z-control"></i></a></div>
+          <div class="cube__controls"><a class="top-x-control" href="#"><i class="fas fa-arrow-up"></i></a><a class="bottom-x-control" href="#"><i class="fas fa-arrow-down"></i></a><a class="left-y-control" href="#"><i class="fas fa-arrow-left"></i></a><a class="right-y-control" href="#"><i class="fas fa-arrow-right"></i></a><a class="top-z-control" href="#"><i class="fas fa-arrow-down"></i></a><a class="bottom-z-control" href="#"><i class="fas fa-arrow-up"></i></a></div>
           <!--/.cube__controls-->
         </div>
         <!--/.cube-->
@@ -83,6 +83,23 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="iphone-12__slideshow"></div>
       </section>
       <!--/.iphone-12-->
+      <section class="iphones">
+        <h2 class="iphones__heading">iPhone 12</h2>
+        <div class="iphones__images">
+          <picture class="picture">
+            <source media="(min-width: 660px)" type="image/webp" srcset="img/iphones-01-md.webp, img/iphones-01-md@2x.webp 2x" />
+            <source media="(min-width: 660px)" type="image/png" srcset="img/iphones-01-md.png, img/iphones-01-md@2x.png 2x" />
+            <source media="(min-width: 0)" type="image/webp" srcset="img/iphones-01-sm.webp, img/iphones-01-sm@2x.webp 2x" /><img class="picture__img" alt="iPhones 12" width="320" src="img/iphones-01-sm.png" srcset="img/iphones-01-sm@2x.png 2x" />
+          </picture>
+          <picture class="picture">
+            <source media="(min-width: 660px)" type="image/webp" srcset="img/iphones-02-md.webp, img/iphones-02-md@2x.webp 2x" />
+            <source media="(min-width: 660px)" type="image/png" srcset="img/iphones-02-md.png, img/iphones-02-md@2x.png 2x" />
+            <source media="(min-width: 0)" type="image/webp" srcset="img/iphones-02-sm.webp, img/iphones-02-sm@2x.webp 2x" /><img class="picture__img" alt="iPhones 12" width="320" src="img/iphones-02-sm.png" srcset="img/iphones-02-sm@2x.png 2x" />
+          </picture>
+        </div>
+        <div class="iphones__buttons"><a class="iphones__btn" href="#"><span>Learn More</span></a><a class="iphones__btn" href="#"><span>Shop</span></a></div>
+      </section>
+      <!--/.iphones-->
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner"></div>
       </footer>
