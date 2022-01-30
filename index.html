@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <div class="page__inner">
     <div class="page__content">
       <section class="iphone-12" id="iphone-12"><a class="logo" href="#"><i class="fab fa-apple"></i></a>
-        <nav class="navbar"><a class="navbar__link" href="#iphone-12">iPhone12</a><a class="navbar__link" href="#mac-book">MacBook Air</a><a class="navbar__link" href="#watch">Watch</a><a class="navbar__link" href="#airpods">AirPods</a></nav>
+        <nav class="navbar"><a class="navbar__link" href="#iphone-12">iPhone12</a><a class="navbar__link" href="#macbook">MacBook Air</a><a class="navbar__link" href="#watch">Watch</a><a class="navbar__link" href="#airpods">AirPods</a></nav>
         <!--/.navbar-->
         <div class="cube__wrapper">
           <div class="cube">
@@ -100,6 +100,28 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="iphones__buttons"><a class="iphones__btn" href="#"><span>Learn More</span></a><a class="iphones__btn" href="#"><span>Shop</span></a></div>
       </section>
       <!--/.iphones-->
+      <section class="macbook" id="macbook">
+        <h2 class="macbook__heading">MacBook Air</h2>
+        <div class="macbook__content">
+          <picture class="picture macbook__img-1">
+            <source media="(min-width: 0)" type="image/webp" srcset="img/macbook-01-sm.webp, img/macbook-01-sm@2x.webp 2x" /><img class="picture__img" alt="MacBook Air screen" width="320" src="img/macbook-01-sm.png" srcset="img/macbook-01-sm@2x.png 2x" />
+          </picture>
+          <picture class="picture macbook__img-2">
+            <source media="(min-width: 0)" type="image/webp" srcset="img/macbook-02-sm.webp, img/macbook-02-sm@2x.webp 2x" /><img class="picture__img" alt="MacBook Air keyboard" width="320" src="img/macbook-02-sm.png" srcset="img/macbook-02-sm@2x.png 2x" />
+          </picture>
+          <div class="macbook__loading-wrapper">
+            <div class="macbook__loading"><i class="fab fa-apple"></i>
+              <div class="macbook__progress-bar"></div>
+            </div>
+          </div>
+          <div class="macbook__info">
+            <h3 class="macbook__info-heading">Light. Speed.</h3>
+            <p class="macbook__price">Starting at $999</p><button class="btn macbook__btn">Buy Now</button>
+          </div>
+        </div>
+        <!--/.macbook__content-->
+      </section>
+      <!--/.macbook-->
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner"></div>
       </footer>

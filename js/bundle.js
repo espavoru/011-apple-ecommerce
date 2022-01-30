@@ -119,6 +119,17 @@ eval("var slideshowDivs = function slideshowDivs() {\n  for (var i = 1; i <= 5; 
 
 /***/ }),
 
+/***/ "./src/blocks/macbook/macbook.js":
+/*!***************************************!*\
+  !*** ./src/blocks/macbook/macbook.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var macbookContent = document.querySelector('.macbook__content');\nwindow.addEventListener('scroll', function () {\n  if (window.pageYOffset + window.innerHeight >= macbookContent.offsetTop + macbookContent.offsetHeight / 2) {\n    macbookContent.classList.add('change');\n  }\n});\n\n//# sourceURL=webpack:///./src/blocks/macbook/macbook.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/main-nav/main-nav.js":
 /*!*****************************************!*\
   !*** ./src/blocks/main-nav/main-nav.js ***!
@@ -148,7 +159,7 @@ eval("function _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol ===
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/cube/cube.js */ \"./src/blocks/cube/cube.js\");\n\n__webpack_require__(/*! ../blocks/iphone-12/iphone-12.js */ \"./src/blocks/iphone-12/iphone-12.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/cube/cube.js */ \"./src/blocks/cube/cube.js\");\n\n__webpack_require__(/*! ../blocks/iphone-12/iphone-12.js */ \"./src/blocks/iphone-12/iphone-12.js\");\n\n__webpack_require__(/*! ../blocks/macbook/macbook.js */ \"./src/blocks/macbook/macbook.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 
