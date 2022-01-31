@@ -19,13 +19,28 @@
 
     &:last-of-type {
       background-color: var(--primary-color);
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+    }
+
+    &:first-of-type {
+
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
   }
 
   img {
-    width: inherit;
-    height: inherit;
+    width: auto;
+    height: 100%;
     object-fit: cover;
+
+    @media (max-width: 900px) {
+      object-fit: contain;
+    }
   }
 
   .btn {
@@ -42,6 +57,13 @@
     transition: all $transition-time;
     background-color: var(--primary-color);
     cursor: pointer;
+
+    @media (max-width: 700px) {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      box-shadow: 0.1rem 0.1rem 0.1rem #ccc;
+      background-color: var(--white-color);
+    }
 
     &:last-of-type {
       color: var(--primary-color);
@@ -60,6 +82,10 @@
     position: relative;
     width: 90%;
     height: 80%;
+
+    @media (max-width: 900px) {
+      width: 95%;
+    }
   }
 
   &__heading {
@@ -72,7 +98,12 @@
     font-size: 15rem;
     font-weight: 300;
     color: var(--white-color);
+    white-space: nowrap;
     text-shadow: 0.1rem 0.1rem 0 #999;
+
+    @media (max-width: 900px) {
+      font-size: 12rem;
+    }
   }
 
   &__buttons {
@@ -81,5 +112,10 @@
     left: 50%;
     margin-top: 5rem;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 550px) {
+      width: 50rem;
+      text-align: center;
+    }
   }
 }

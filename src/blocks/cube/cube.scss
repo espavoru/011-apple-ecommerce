@@ -15,8 +15,16 @@
   transform-style: preserve-3d;
   transition: transform 0.5s;
 
+  @media (max-width: 700px) {
+    top: 3rem;
+  }
+
   &__wrapper {
     perspective: 100rem;
+
+    @media (max-width: 700px) {
+      opacity: 0.7;
+    }
   }
 
   &__front-side {
@@ -126,6 +134,10 @@
 
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.9);
+
+    @media (max-width: 700px) {
+      display: none;
+    }
 
     i {
       font-size: 1.5rem;

@@ -130,6 +130,18 @@
     background-color: var(--black-color);
     cursor: pointer;
 
+    @media (max-width: 1100px) {
+      right: 25%;
+
+      @media (max-width: 700px) {
+        right: 15%;
+      }
+
+      @media (max-width: 450px) {
+        right: 5%;
+      }
+    }
+
     &:hover {
       color: var(--white-color);
 

@@ -22,9 +22,24 @@
     top: 3rem;
     left: 3rem;
 
+    @media (max-width: 700px) {
+      top: 0;
+      left: 2rem;
+
+      @media (max-width: 450px) {
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
     i {
       font-size: 10rem;
       color: rgba(0, 0, 0, 0.8);
+
+      @media (max-width: 700px) {
+        font-size: 8rem;
+      }
     }
   }
 

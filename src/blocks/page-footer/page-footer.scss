@@ -15,12 +15,22 @@
 
   &__icon-link {
     margin: 0 5rem;
+    text-decoration: none;
+
+    @media (max-width: 700px) {
+      margin: 0 2rem;
+    }
   }
 
-  &__picture {
+  img {
+    width: 10rem;
 
-    img {
-      width: 10rem;
+    @media (max-width: 550px) {
+      width: 8rem;
+    }
+
+    @media (max-width: 450px) {
+      width: 6rem;
     }
   }
 
