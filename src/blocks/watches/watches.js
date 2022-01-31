@@ -9,7 +9,7 @@ const watchLeftControl = document.querySelector('.watches__control--left')
 let axisY = 0
 let axisX = 0
 
-document.querySelectorAll('.watches__control, .cube__controls a').forEach(control => {
+document.querySelectorAll('.watches__control, .cube__controls a, .iphones__btn').forEach(control => {
   control.addEventListener('click', e => {
     e.preventDefault()
   })

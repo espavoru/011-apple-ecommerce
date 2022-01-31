@@ -14,9 +14,9 @@ block content
       i.fab.fa-apple
 
     nav.navbar
-      a(class='navbar__link', href='#iphone-12') iPhone12
+      a(class='navbar__link', href='#iphones') iPhone12
       a(class='navbar__link', href='#macbook') MacBook Air
-      a(class='navbar__link', href='#watch') Watch
+      a(class='navbar__link', href='#watches') Watch
       a(class='navbar__link', href='#airpods') AirPods
     ///.navbar
 
@@ -65,7 +65,7 @@ block content
     .iphone-12__slideshow
   ///.iphone-12
 
-  section.iphones
+  section.iphones#iphones
     h2.iphones__heading iPhone 12
 
     .iphones__images
@@ -124,7 +124,7 @@ block content
     ///.macbook__content
   ///.macbook
 
-  section.watches
+  section.watches#watches
     .watches__wrapper
       .watches__bands
         +picture({
@@ -309,3 +309,56 @@ block content
         +btn('Learn More')(href='#')
         +btn('Buy')(href='#')
   ///.airpods
+
+block footer
+  footer.page-footer
+    .page-footer__icons
+      a.page-footer__icon-link(href='#iphone-12')
+        +picture({
+          'img': 'page-footer-icon-02',
+          'alt': 'Home icon',
+          'lg': false,
+          'md': false,
+          'ext': 'png'
+        }).page-footer__picture
+
+      a.page-footer__icon-link(href='#iphones')
+        +picture({
+          'img': 'page-footer-icon-03',
+          'alt': 'iPhone icon',
+          'lg': false,
+          'md': false,
+          'ext': 'png'
+        }).page-footer__picture
+
+      a.page-footer__icon-link(href='#macbook')
+        +picture({
+          'img': 'page-footer-icon-04',
+          'alt': 'MacBook icon',
+          'lg': false,
+          'md': false,
+          'ext': 'png'
+        }).page-footer__picture
+
+      a.page-footer__icon-link(href='#watches')
+        +picture({
+          'img': 'page-footer-icon-05',
+          'alt': 'Watch icon',
+          'lg': false,
+          'md': false,
+          'ext': 'png'
+        }).page-footer__picture
+
+      a.page-footer__icon-link(href='#airpods')
+        +picture({
+          'img': 'page-footer-icon-01',
+          'alt': 'AirPods icon',
+          'lg': false,
+          'md': false,
+          'ext': 'png'
+        }).page-footer__picture
+    ///.page-footer__icons
+
+    p.page-footer__copyright
+      | Copyright &copy; CodeAndCreate All Rights Reserved
+  ///.page-footer

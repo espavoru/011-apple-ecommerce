@@ -88,6 +88,8 @@
     border-radius: 50%;
 
     text-decoration: none;
+
+    transition: all $transition-time;
     background-image: linear-gradient(to right, rgb(51, 51, 51) 60%, rgb(82, 82, 82));
 
     span {
@@ -104,8 +106,14 @@
       color: var(--primary-color);
     }
 
-    &:hover span {
-      transform: scale(1);
+    &:hover {
+      box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+      transform: scale(1.1);
+      transition: all $transition-time;
+
+      span {
+        transform: scale(1);
+      }
     }
 
     &::after {

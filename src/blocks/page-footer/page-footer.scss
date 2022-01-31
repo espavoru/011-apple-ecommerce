@@ -5,4 +5,31 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+
+  &__icon-link {
+    margin: 0 5rem;
+  }
+
+  &__picture {
+
+    img {
+      width: 10rem;
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 5rem;
+    margin: 0;
+
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
 }
