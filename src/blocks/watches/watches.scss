@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 140vh;
-  padding: 20vh 0;
+  height: 110vh;
+  padding: 10vh 0;
 
   &__wrapper {
     display: flex;
@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    transition: margin-right 1s;
   }
 
   &__cases {
@@ -37,6 +38,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    transition: margin-top 1s;
   }
 
   &__band-img {
@@ -50,11 +52,13 @@
   }
 
   &__case-img {
+    height: 35rem;
 
     img {
       width: 35rem;
+      max-width: unset;
       height: 35rem;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 
@@ -73,6 +77,11 @@
     i {
       font-size: 3rem;
       color: var(--primary-color);
+    }
+
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
     }
 
     &--top {
