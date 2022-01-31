@@ -285,3 +285,27 @@ block content
 
     +btn('Buy Now').watches__btn(href='#')
   ///.watches
+
+  section.airpods#airpods
+    .airpods__wrapper
+      h2.airpods__heading AirPods
+
+      +picture({
+        'img': 'airpods-01',
+        'alt': 'AirPods',
+        'lg': false,
+        'md': true,
+        'ext': 'png'
+      })
+      +picture({
+        'img': 'airpods-02',
+        'alt': 'AirPods',
+        'lg': false,
+        'md': true,
+        'ext': 'png'
+      })
+
+      .airpods__buttons
+        +btn('Learn More')(href='#')
+        +btn('Buy')(href='#')
+  ///.airpods
