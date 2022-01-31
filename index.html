@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <div class="page__inner">
     <div class="page__content">
       <section class="iphone-12" id="iphone-12"><a class="logo" href="#"><i class="fab fa-apple"></i></a>
-        <nav class="navbar"><a class="navbar__link" href="#iphone-12">iPhone12</a><a class="navbar__link" href="#macbook">MacBook Air</a><a class="navbar__link" href="#watch">Watch</a><a class="navbar__link" href="#airpods">AirPods</a></nav>
+        <nav class="navbar"><a class="navbar__link" href="#iphones">iPhone12</a><a class="navbar__link" href="#macbook">MacBook Air</a><a class="navbar__link" href="#watches">Watch</a><a class="navbar__link" href="#airpods">AirPods</a></nav>
         <!--/.navbar-->
         <div class="cube__wrapper">
           <div class="cube">
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="iphone-12__slideshow"></div>
       </section>
       <!--/.iphone-12-->
-      <section class="iphones">
+      <section class="iphones" id="iphones">
         <h2 class="iphones__heading">iPhone 12</h2>
         <div class="iphones__images">
           <picture class="picture">
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <!--/.macbook__content-->
       </section>
       <!--/.macbook-->
-      <section class="watches">
+      <section class="watches" id="watches">
         <div class="watches__wrapper">
           <div class="watches__bands">
             <picture class="picture watches__band-img">
@@ -196,9 +196,49 @@ document.addEventListener("DOMContentLoaded", () => {
         </div><a class="watches__control watches__control--top" href="#"><i class="fas fa-angle-up"></i></a><a class="watches__control watches__control--right" href="#"><i class="fas fa-angle-right"></i></a><a class="watches__control watches__control--bottom" href="#"><i class="fas fa-angle-down"></i></a><a class="watches__control watches__control--left" href="#"><i class="fas fa-angle-left"></i></a><a class="btn watches__btn" href="#">Buy Now</a>
       </section>
       <!--/.watches-->
-      <footer class="page-footer" role="contentinfo">
-        <div class="page-footer__inner"></div>
+      <section class="airpods" id="airpods">
+        <div class="airpods__wrapper">
+          <h2 class="airpods__heading">AirPods</h2>
+          <picture class="picture">
+            <source media="(min-width: 660px)" type="image/webp" srcset="img/airpods-01-md.webp, img/airpods-01-md@2x.webp 2x" />
+            <source media="(min-width: 660px)" type="image/png" srcset="img/airpods-01-md.png, img/airpods-01-md@2x.png 2x" />
+            <source media="(min-width: 0)" type="image/webp" srcset="img/airpods-01-sm.webp, img/airpods-01-sm@2x.webp 2x" /><img class="picture__img" alt="AirPods" width="320" src="img/airpods-01-sm.png" srcset="img/airpods-01-sm@2x.png 2x" />
+          </picture>
+          <picture class="picture">
+            <source media="(min-width: 660px)" type="image/webp" srcset="img/airpods-02-md.webp, img/airpods-02-md@2x.webp 2x" />
+            <source media="(min-width: 660px)" type="image/png" srcset="img/airpods-02-md.png, img/airpods-02-md@2x.png 2x" />
+            <source media="(min-width: 0)" type="image/webp" srcset="img/airpods-02-sm.webp, img/airpods-02-sm@2x.webp 2x" /><img class="picture__img" alt="AirPods" width="320" src="img/airpods-02-sm.png" srcset="img/airpods-02-sm@2x.png 2x" />
+          </picture>
+          <div class="airpods__buttons"><a class="btn" href="#">Learn More</a><a class="btn" href="#">Buy</a></div>
+        </div>
+      </section>
+      <!--/.airpods-->
+      <footer class="page-footer">
+        <div class="page-footer__icons"><a class="page-footer__icon-link" href="#iphone-12">
+            <picture class="picture page-footer__picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/page-footer-icon-02-sm.webp, img/page-footer-icon-02-sm@2x.webp 2x" /><img class="picture__img" alt="Home icon" width="320" src="img/page-footer-icon-02-sm.png" srcset="img/page-footer-icon-02-sm@2x.png 2x" />
+            </picture>
+          </a><a class="page-footer__icon-link" href="#iphones">
+            <picture class="picture page-footer__picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/page-footer-icon-03-sm.webp, img/page-footer-icon-03-sm@2x.webp 2x" /><img class="picture__img" alt="iPhone icon" width="320" src="img/page-footer-icon-03-sm.png" srcset="img/page-footer-icon-03-sm@2x.png 2x" />
+            </picture>
+          </a><a class="page-footer__icon-link" href="#macbook">
+            <picture class="picture page-footer__picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/page-footer-icon-04-sm.webp, img/page-footer-icon-04-sm@2x.webp 2x" /><img class="picture__img" alt="MacBook icon" width="320" src="img/page-footer-icon-04-sm.png" srcset="img/page-footer-icon-04-sm@2x.png 2x" />
+            </picture>
+          </a><a class="page-footer__icon-link" href="#watches">
+            <picture class="picture page-footer__picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/page-footer-icon-05-sm.webp, img/page-footer-icon-05-sm@2x.webp 2x" /><img class="picture__img" alt="Watch icon" width="320" src="img/page-footer-icon-05-sm.png" srcset="img/page-footer-icon-05-sm@2x.png 2x" />
+            </picture>
+          </a><a class="page-footer__icon-link" href="#airpods">
+            <picture class="picture page-footer__picture">
+              <source media="(min-width: 0)" type="image/webp" srcset="img/page-footer-icon-01-sm.webp, img/page-footer-icon-01-sm@2x.webp 2x" /><img class="picture__img" alt="AirPods icon" width="320" src="img/page-footer-icon-01-sm.png" srcset="img/page-footer-icon-01-sm@2x.png 2x" />
+            </picture>
+          </a></div>
+        <!--/.page-footer__icons-->
+        <p class="page-footer__copyright">Copyright &copy; CodeAndCreate All Rights Reserved</p>
       </footer>
+      <!--/.page-footer-->
     </div>
   </div><script defer src="js/bundle.js">
   </script>
